@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ace the TCS NQT - Your Complete Preparation Guide</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+        }
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .timeline-container {
+            position: relative;
+        }
+        .timeline-container:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 100%;
+            background-color: #e5e7eb;
+            z-index: -1;
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            top: 1.5rem;
+            left: -0.75rem;
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 50%;
+            background-color: #3b82f6;
+            z-index: 1;
+        }
+        .section-heading {
+            position: relative;
+            display: inline-block;
+        }
+        .section-heading:after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 50px;
+            height: 4px;
+            background: #3b82f6;
+            border-radius: 2px;
+        }
+        .counter-box {
+            text-align: center;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .counter-box:hover {
+            transform: scale(1.05);
+        }
+        .tip-card {
+            border-left: 4px solid #3b82f6;
+        }
+        .resource-card {
+            transition: all 0.3s ease;
+        }
+        .resource-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        .faq-item {
+            border-bottom: 1px solid #e5e7eb;
+            transition: all 0.3s ease;
+        }
+        .faq-item:hover {
+            background-color: #f3f4f6;
+        }
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.4);
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out;
+            padding: 0 1rem;
+        }
+        .faq-question {
+            cursor: pointer;
+            position: relative;
+            padding-right: 30px;
+        }
+        .faq-question::after {
+            content: '\f078';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: transform 0.3s ease;
+        }
+        .faq-question.active::after {
+            transform: translateY(-50%) rotate(180deg);
+        }
+        .faq-answer.active {
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="gradient-bg text-white">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <i class="fas fa-graduation-cap text-3xl mr-3"></i>
+                <span class="font-bold text-xl">TCS NQT Mastery</span>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#exam-structure" class="hover:text-blue-200 transition">Exam Structure</a>
+                <a href="#preparation" class="hover:text-blue-200 transition">Preparation</a>
+                <a href="#resources" class="hover:text-blue-200 transition">Resources</a>
+                <a href="#faq" class="hover:text-blue-200 transition">FAQ</a>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <div class="container mx-auto px-6 py-20 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Crack the TCS NQT Exam</h1>
+            <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto">Your comprehensive guide to acing the TCS National Qualifier Test and launching your tech career.</p>
+            <a href="#get-started" class="cta-button bg-white text-blue-600 font-semibold px-8 py-3 rounded-full inline-block shadow-lg hover:bg-blue-50">
+                Get Started Now
+            </a>
+        </div>
+    </header>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="counter-box bg-blue-50">
+                    <h3 class="text-4xl font-bold text-blue-600">75</h3>
+                    <p class="text-gray-600 mt-2">Minutes for Foundation Round</p>
+                </div>
+                <div class="counter-box bg-purple-50">
+                    <h3 class="text-4xl font-bold text-purple-600">115</h3>
+                    <p class="text-gray-600 mt-2">Minutes for Advanced Round</p>
+                </div>
+                <div class="counter-box bg-green-50">
+                    <h3 class="text-4xl font-bold text-green-600">70+</h3>
+                    <p class="text-gray-600 mt-2">Questions to Solve</p>
+                </div>
+                <div class="counter-box bg-yellow-50">
+                    <h3 class="text-4xl font-bold text-yellow-600">0</h3>
+                    <p class="text-gray-600 mt-2">Negative Marking</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exam Structure Section -->
+    <section id="exam-structure" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="section-heading text-3xl font-bold mb-12 text-center">TCS NQT Exam Structure</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+                <!-- Foundation Round -->
+                <div class="card bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-layer-group text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold">Foundation Round</h3>
+                    </div>
+                    <p class="text-gray-600 mb-6">Mandatory for all candidates applying for any role.</p>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start">
+                            <div class="mt-1 mr-3 text-blue-500"><i class="fas fa-check-circle"></i></div>
+                            <div>
+                                <h4 class="font-semibold">Numerical Ability</h4>
+                                <p class="text-sm text-gray-600">Basic mathematical concepts, arithmetic, algebra, and data interpretation.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="mt-1 mr-3 text-blue-500"><i class="fas fa-check-circle"></i></div>
+                            <div>
+                                <h4 class="font-semibold">Verbal Ability</h4>
+                                <p class="text-sm text-gray-600">English grammar, vocabulary, reading comprehension, and verbal reasoning.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="mt-1 mr-3 text-blue-500"><i class="fas fa-check-circle"></i></div>
+                            <div>
+                                <h4 class="font-semibold">Reasoning Ability</h4>
+                                <p class="text-sm text-gray-600">Logical reasoning, pattern recognition, and analytical thinking.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-semibold">Total Questions:</span>
+                            <span>65-70 questions</span>
+                        </div>
+                        <div class="flex justify-between mb-2">
+                            <span class="font-semibold">Time Limit:</span>
+                            <span>75 minutes</span>
+                        </div>
+                        <div class="flex justify-between mb-2">
+                            <span class="font-semibold">Difficulty Level:</span>
+                            <span>Moderate</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="font-semibold">Required For:</span>
+                            <span>'Ninja' Profile</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Advanced Section -->
+                <div class="card bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-code text-purple-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold">Advanced Section</h3>
+                    </div>
+                    <p class="text-gray-600 mb-6">For candidates applying for 'Digital' or 'Prime' roles.</p>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start">
+                            <div class="mt-1 mr-3 text-purple-500"><i class="fas fa-check-circle"></i></div>
+                            <div>
+                                <h4 class="font-semibold">Advanced Math & Reasoning</h4>
+                                <p class="text-sm text-gray-600">Complex mathematical problems and in-depth reasoning questions.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="mt-1 mr-3 text-purple-500"><i class="fas fa-check-circle"></i></div>
+                            <div>
+                                <h4 class="font-semibold">Coding Problems</h4>
+                                <p class="text-sm text-gray-600">3 coding challenges testing algorithm design and problem-solving skills.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="mt-1 mr-3 text-purple-500"><i class="fas fa-check-circle"></i></div>
+                            <div>
+                                <h4 class="font-semibold">Technical Knowledge</h4>
+                                <p class="text-sm text-gray-600">Questions on programming concepts, data structures, and algorithms.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-purple-50 p-4 rounded-lg">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-semibold">Thinking Questions:</span>
+                            <span>Around 18 questions</span>
+                        </div>
+                        <div class="flex justify-between mb-2">
+                            <span class="font-semibold">Coding Questions:</span>
+                            <span>3 problems</span>
+                        </div>
+                        <div class="flex justify-between mb-2">
+                            <span class="font-semibold">Time Limit:</span>
+                            <span>115 minutes (90 min for coding)</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="font-semibold">Difficulty Level:</span>
+                            <span>High</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Important Rules -->
+            <div class="bg-yellow-50 p-8 rounded-lg shadow-md">
+                <h3 class="text-2xl font-bold mb-6 text-center">Important Exam Rules</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-times-circle text-yellow-600 text-2xl"></i>
+                        </div>
+                        <h4 class="font-semibold mb-2">No Negative Marking</h4>
+                        <p class="text-sm text-gray-600">Attempt all questions without fear of penalties for wrong answers.</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-exchange-alt text-yellow-600 text-2xl"></i>
+                        </div>
+                        <h4 class="font-semibold mb-2">No Section Switching</h4>
+                        <p class="text-sm text-gray-600">Complete each section before moving to the next. No going back to previous sections.</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-video text-yellow-600 text-2xl"></i>
+                        </div>
+                        <h4 class="font-semibold mb-2">AI Proctoring</h4>
+                        <p class="text-sm text-gray-600">Online monitoring through webcam and microphone to ensure fair examination.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preparation Section -->
+    <section id="preparation" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="section-heading text-3xl font-bold mb-12 text-center">How to Prepare for TCS NQT</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                <!-- Left Column: Tips -->
+                <div class="space-y-6">
+                    <div class="tip-card bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-book text-blue-600"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">Master the Basics</h3>
+                        </div>
+                        <p class="text-gray-600">Get comfortable with core concepts in Quantitative Aptitude, Logical Reasoning, and Programming fundamentals (C, C++, Java, or Python).</p>
+                    </div>
+
+                    <div class="tip-card bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-history text-blue-600"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">Solve Previous Year Papers</h3>
+                        </div>
+                        <p class="text-gray-600">Practice with past exam papers to understand question patterns and difficulty levels. This is one of the most effective preparation strategies.</p>
+                    </div>
+
+                    <div class="tip-card bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-tasks text-blue-600"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">Take Mock Tests</h3>
+                        </div>
+                        <p class="text-gray-600">Complete at least 5+ full-length mock tests to improve time management and get accustomed to the exam environment.</p>
+                    </div>
+
+                    <div class="tip-card bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-calculator text-blue-600"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold">Learn Quant Shortcuts</h3>
+                        </div>
+                        <p class="text-gray-600">Discover mathematical shortcuts and tricks to solve numerical problems quickly and efficiently.</p>
+                    </div>
+                </div>
+
+                <!-- Right Column: Study Plan -->
+                <div class="bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold mb-6">90-Day Study Plan</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <h4 class="font-semibold text-blue-600 mb-2">Days 1-30: Build Foundations</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                                <li>Review basic mathematical concepts and formulas</li>
+                                <li>Study English grammar rules and vocabulary</li>
+                                <li>Learn logical reasoning techniques</li>
+                                <li>Refresh programming fundamentals</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <h4 class="font-semibold text-blue-600 mb-2">Days 31-60: Practice & Application</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                                <li>Solve topic-wise practice problems</li>
+                                <li>Take section-wise mock tests</li>
+                                <li>Review previous year questions</li>
+                                <li>Practice coding challenges regularly</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <h4 class="font-semibold text-blue-600 mb-2">Days 61-90: Full Test Preparation</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                                <li>Take full-length mock tests every 3-4 days</li>
+                                <li>Analyze mistakes and improve weak areas</li>
+                                <li>Practice time management</li>
+                                <li>Review all concepts one final time</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Subject-wise Preparation -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold mb-8 text-center">Subject-wise Preparation Tips</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Numerical Ability -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-calculator text-blue-600"></i>
+                            </div>
+                            <h4 class="text-xl font-semibold">Numerical Ability</h4>
+                        </div>
+                        <ul class="list-disc pl-5 text-gray-600 space-y-2 mb-4">
+                            <li>Practice basic arithmetic operations</li>
+                            <li>Master percentages, profit/loss, and interest problems</li>
+                            <li>Practice data interpretation with charts and graphs</li>
+                            <li>Review probability, permutation, and combination</li>
+                        </ul>
+                        <p class="text-sm italic text-gray-500">Focus areas: Number systems, averages, ratios, time & work, speed & distance</p>
+                    </div>
+                    
+                    <!-- Verbal Ability -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-book text-green-600"></i>
+                            </div>
+                            <h4 class="text-xl font-semibold">Verbal Ability</h4>
+                        </div>
+                        <ul class="list-disc pl-5 text-gray-600 space-y-2 mb-4">
+                            <li>Improve reading comprehension skills</li>
+                            <li>Practice spotting errors in sentences</li>
+                            <li>Build vocabulary through word lists</li>
+                            <li>Study para jumbles and sentence completion</li>
+                        </ul>
+                        <p class="text-sm italic text-gray-500">Focus areas: Grammar rules, synonyms/antonyms, idioms, reading comprehension</p>
+                    </div>
+                    
+                    <!-- Reasoning Ability -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-brain text-purple-600"></i>
+                            </div>
+                            <h4 class="text-xl font-semibold">Reasoning Ability</h4>
+                        </div>
+                        <ul class="list-disc pl-5 text-gray-600 space-y-2 mb-4">
+                            <li>Practice puzzles and seating arrangements</li>
+                            <li>Learn to solve syllogisms and Venn diagrams</li>
+                            <li>Work on coding-decoding problems</li>
+                            <li>Study blood relations and direction sense</li>
+                        </ul>
+                        <p class="text-sm italic text-gray-500">Focus areas: Logical deduction, series completion, analogies, visual reasoning</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Programming & Coding Tips -->
+            <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                <h3 class="text-2xl font-bold mb-6 text-center">Programming & Coding Preparation</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="text-xl font-semibold mb-4">Core Concepts to Master</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span><span class="font-medium">Data Structures:</span> Arrays, linked lists, stacks, queues, trees, and graphs</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span><span class="font-medium">Algorithms:</span> Searching, sorting, recursion, dynamic programming</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span><span class="font-medium">Problem-solving:</span> Time complexity analysis, space optimization</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span><span class="font-medium">OOP Concepts:</span> Classes, inheritance, polymorphism, encapsulation</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-xl font-semibold mb-4">Coding Practice Strategy</h4>
+                        <ol class="list-decimal pl-5 space-y-3 text-gray-700">
+                            <li>Start with easy problems and gradually increase difficulty</li>
+                            <li>Practice on platforms like LeetCode, HackerRank, and CodeChef</li>
+                            <li>Time yourself to simulate exam conditions</li>
+                            <li>Review solutions and learn multiple approaches</li>
+                            <li>Focus on commonly asked problem types like string manipulation, array operations, and mathematical algorithms</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="section-heading text-3xl font-bold mb-12 text-center">Essential Resources</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                <!-- Previous Year Papers -->
+                <a href="https://www.freshersnow.com/tcs-nqt-placement-papers/" target="_blank" class="resource-card bg-white p-6 rounded-lg shadow-md flex flex-col h-full">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-file-alt text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Previous Year Papers</h3>
+                    </div>
+                    <p class="text-gray-600 flex-grow">Access past TCS NQT papers on FreshersNow to understand question patterns and difficulty levels.</p>
+                    <div class="mt-4 text-blue-600 flex items-center">
+                        <span>Visit Resource</span>
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </div>
+                </a>
+                
+                <!-- Mock Tests -->
+                <a href="https://prepinsta.com/tcs-nqt/mock-test/" target="_blank" class="resource-card bg-white p-6 rounded-lg shadow-md flex flex-col h-full">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-laptop-code text-green-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Mock Tests</h3>
+                    </div>
+                    <p class="text-gray-600 flex-grow">Practice with full-length mock tests on PrepInsta to simulate the actual exam experience.</p>
+                    <div class="mt-4 text-green-600 flex items-center">
+                        <span>Visit Resource</span>
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </div>
+                </a>
+                
+                <!-- Preparation Tips -->
+                <a href="https://testbook.com/tcs-nqt/preparation-tips" target="_blank" class="resource-card bg-white p-6 rounded-lg shadow-md flex flex-col h-full">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-lightbulb text-purple-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Preparation Tips</h3>
+                    </div>
+                    <p class="text-gray-600 flex-grow">Learn effective strategies and shortcuts for TCS NQT preparation from Testbook experts.</p>
+                    <div class="mt-4 text-purple-600 flex items-center">
+                        <span>Visit Resource</span>
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Recommended Books -->
+            <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+                <h3 class="text-2xl font-bold mb-6 text-center">Recommended Books</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="flex border-b pb-4 md:border-b-0 md:border-r md:pr-6">
+                        <div class="w-16 h-16 bg-red-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                            <i class="fas fa-book text-red-600 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-2">Quantitative Aptitude</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                                <li>Quantitative Aptitude by R.S. Aggarwal</li>
+                                <li>Fast Track Objective Arithmetic by Rajesh Verma</li>
+                                <li>Magical Book on Quicker Maths by M. Tyra</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="flex border-b pb-4 md:border-b-0 md:pl-6">
+                        <div class="w-16 h-16 bg-yellow-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                            <i class="fas fa-language text-yellow-600 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-2">Verbal Ability</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                                <li>Word Power Made Easy by Norman Lewis</li>
+                                <li>Objective General English by S.P. Bakshi</li>
+                                <li>High School English Grammar by Wren & Martin</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="flex border-b pb-4 md:border-b-0 md:border-r md:pr-6">
+                        <div class="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                            <i class="fas fa-brain text-green-600 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-2">Reasoning Ability</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                                <li>A Modern Approach to Verbal & Non-Verbal Reasoning by R.S. Aggarwal</li>
+                                <li>Analytical Reasoning by M.K. Pandey</li>
+                                <li>Logical Reasoning and Data Interpretation by Arun Sharma</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="flex md:pl-6">
+                        <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                            <i class="fas fa-code text-blue-600 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-2">Programming & Coding</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                                <li>Data Structures and Algorithms in Python by Goodrich</li>
+                                <li>Cracking the Coding Interview by Gayle L. McDowell</li>
+                                <li>Introduction to Algorithms by Cormen, Leiserson, Rivest, and Stein</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Online Learning Platforms -->
+            <div class="bg-blue-50 p-8 rounded-lg shadow-md">
+                <h3 class="text-2xl font-bold mb-6 text-center">Online Learning Platforms</h3>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <a href="https://www.prepinsta.com/" target="_blank" class="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow flex flex-col items-center">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-3">
+                            <i class="fas fa-graduation-cap text-blue-600"></i>
+                        </div>
+                        <h4 class="font-semibold">PrepInsta</h4>
+                        <p class="text-xs text-center text-gray-500 mt-2">Complete TCS NQT preparation with mock tests and guides</p>
+                    </a>
+                    
+                    <a href="https://www.indiabix.com/" target="_blank" class="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow flex flex-col items-center">
+                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-3">
+                            <i class="fas fa-question-circle text-green-600"></i>
+                        </div>
+                        <h4 class="font-semibold">IndiaBix</h4>
+                        <p class="text-xs text-center text-gray-500 mt-2">Practice aptitude and reasoning questions</p>
+                    </a>
+                    
+                    <a href="https://www.geeksforgeeks.org/" target="_blank" class="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow flex flex-col items-center">
+                        <div class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mb-3">
+                            <i class="fas fa-code text-yellow-600"></i>
+                        </div>
+                        <h4 class="font-semibold">GeeksforGeeks</h4>
+                        <p class="text-xs text-center text-gray-500 mt-2">Programming concepts and coding practice</p>
+                    </a>
+                    
+                    <a href="https://www.hackerrank.com/" target="_blank" class="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow flex flex-col items-center">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-3">
+                            <i class="fas fa-laptop-code text-purple-600"></i>
+                        </div>
+                        <h4 class="font-semibold">HackerRank</h4>
+                        <p class="text-xs text-center text-gray-500 mt-2">Coding challenges and competitions</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="section-heading text-3xl font-bold mb-12 text-center">Frequently Asked Questions</h2>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="faq-item py-4">
+                    <h3 class="faq-question text-xl font-semibold mb-2 px-4 py-2">What is the TCS NQT exam?</h3>
+                    <div class="faq-answer px-4">
+                        <p class="text-gray-600">TCS NQT (National Qualifier Test) is an assessment conducted by Tata Consultancy Services to identify talent for entry-level positions. It evaluates candidates on various skills including numerical ability, verbal ability, reasoning, and programming skills.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item py-4">
+                    <h3 class="faq-question text-xl font-semibold mb-2 px-4 py-2">How many sections are there in the TCS NQT exam?</h3>
+                    <div class="faq-answer px-4">
+                        <p class="text-gray-600">The TCS NQT has two main parts: the Foundation Round (mandatory for all) which includes Numerical Ability, Verbal Ability, and Reasoning Ability, and the Advanced Section (for Digital/Prime roles) which contains advanced math & reasoning questions plus coding problems.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item py-4">
+                    <h3 class="faq-question text-xl font-semibold mb-2 px-4 py-2">Is there negative marking in TCS NQT?</h3>
+                    <div class="faq-answer px-4">
+                        <p class="text-gray-600">No, there is no negative marking in the TCS NQT exam. Therefore, candidates are encouraged to attempt all questions.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item py-4">
+                    <h3 class="faq-question text-xl font-semibold mb-2 px-4 py-2">Can I skip sections and come back later?</h3>
+                    <div class="faq-answer px-4">
+                        <p class="text-gray-600">No, you cannot skip sections or return to previous sections. Once you start a section, you must complete it or let the time for that section expire before moving to the next section.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item py-4">
+                    <h3 class="faq-question text-xl font-semibold mb-2 px-4 py-2">How much time do I get for the coding section?</h3>
+                    <div class="faq-answer px-4">
+                        <p class="text-gray-600">The Advanced Section, which includes coding problems, has a total time limit of approximately 115 minutes, with about 90 minutes allocated for the coding portion.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item py-4">
+                    <h3 class="faq-question text-xl font-semibold mb-2 px-4 py-2">What programming languages can I use for the coding section?</h3>
+                    <div class="faq-answer px-4">
+                        <p class="text-gray-600">You can typically use C, C++, Java, or Python for the coding section of the TCS NQT exam. Make sure to be proficient in at least one of these languages before the exam.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item py-4">
+                    <h3 class="faq-question text-xl font-semibold mb-2 px-4 py-2">How can I prepare for the TCS NQT exam?</h3>
+                    <div class="faq-answer px-4">
+                        <p class="text-gray-600">Prepare by mastering the basics of quantitative aptitude, logical reasoning, and programming fundamentals. Practice with previous year papers, take mock tests, learn shortcuts for math problems, and improve your verbal skills. Follow a structured study plan and use the resources mentioned in this guide.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item py-4">
+                    <h3 class="faq-question text-xl font-semibold mb-2 px-4 py-2">What is the difference between Ninja, Digital, and Prime profiles?</h3>
+                    <div class="faq-answer px-4">
+                        <p class="text-gray-600">Ninja is the basic entry-level profile requiring only the Foundation Round qualification. Digital and Prime are higher-level profiles with better compensation packages, requiring candidates to qualify in both the Foundation Round and the Advanced Section.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="get-started" class="gradient-bg py-16 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-8">Ready to Ace Your TCS NQT Exam?</h2>
+            <p class="text-xl mb-10 max-w-2xl mx-auto">Start your preparation journey today with our comprehensive resources and expert guidance. Follow the study plan, practice regularly, and boost your chances of success!</p>
+            
+            <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6">
+                <a href="#exam-structure" class="bg-white text-blue-600 font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-blue-50 transition">
+                    <i class="fas fa-file-alt mr-2"></i> Review Exam Structure
+                </a>
+                <a href="#preparation" class="bg-blue-700 text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-blue-800 transition">
+                    <i class="fas fa-graduation-cap mr-2"></i> Begin Your Preparation
+                </a>
+                <a href="#resources" class="bg-white text-blue-600 font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-blue-50 transition">
+                    <i class="fas fa-book mr-2"></i> Access Resources
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center">
+                        <i class="fas fa-graduation-cap text-3xl mr-3 text-blue-400"></i>
+                        <span class="font-bold text-xl text-white">TCS NQT Mastery</span>
+                    </div>
+                    <p class="mt-2 text-sm">Your comprehensive guide to acing the TCS National Qualifier Test.</p>
+                </div>
+                
+                <div class="flex space-x-8 mb-6 md:mb-0">
+                    <a href="#exam-structure" class="hover:text-blue-400 transition">Exam Structure</a>
+                    <a href="#preparation" class="hover:text-blue-400 transition">Preparation</a>
+                    <a href="#resources" class="hover:text-blue-400 transition">Resources</a>
+                    <a href="#faq" class="hover:text-blue-400 transition">FAQ</a>
+                </div>
+                
+                <div class="flex space-x-4">
+                    <a href="https://www.linkedin.com/in/msathyaanand/" target="_blank" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-600 transition">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://topmate.io/sathyaanand" target="_blank" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-400 transition">
+                        <i class="fas fa-user-friends"></i>
+                    </a>
+                    <a href="https://chat.whatsapp.com/Bh2R3HSpMUE0C9YBgNkCBe" target="_blank" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-green-600 transition">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://linktr.ee/sathyaanand" target="_blank" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-green-400 transition">
+                        <i class="fas fa-link"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm mb-4 md:mb-0">© 2025 TCS NQT Mastery by Sathya Anand. All rights reserved.</p>
+                <div class="flex space-x-6 text-sm">
+                    <a href="#" class="hover:text-blue-400 transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-blue-400 transition">Terms of Service</a>
+                    <a href="#" class="hover:text-blue-400 transition">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple scroll functionality for smooth navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // FAQ dropdown functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                // Set initial state - all closed
+                const answer = question.nextElementSibling;
+                answer.style.maxHeight = '0';
+                answer.style.padding = '0 1rem';
+                answer.style.overflow = 'hidden';
+                answer.style.transition = 'all 0.4s ease-out';
+                
+                question.addEventListener('click', function() {
+                    // Toggle active class
+                    this.classList.toggle('active');
+                    
+                    // Toggle answer visibility
+                    const answer = this.nextElementSibling;
+                    if (this.classList.contains('active')) {
+                        // Set a large max-height to ensure content is fully visible
+                        answer.style.maxHeight = '1000px';
+                        answer.style.padding = '1rem';
+                        answer.classList.add('active');
+                    } else {
+                        answer.style.maxHeight = '0';
+                        answer.style.padding = '0 1rem';
+                        answer.classList.remove('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
